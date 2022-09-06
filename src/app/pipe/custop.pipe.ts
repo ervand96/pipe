@@ -11,8 +11,8 @@ export class PricePipe implements PipeTransform {
     numbers: number
   ) {
     if (result === 'more') {
-      const check = value / 1000;
-      return pipeType + Number(check.toFixed(numbers)).toPrecision();
+      const count = value / 1000;
+      return pipeType + Number(count.toFixed(numbers)).toPrecision();
     } else {
       return pipeType + Number(value.toFixed(numbers)).toPrecision();
     }
