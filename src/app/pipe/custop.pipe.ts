@@ -11,10 +11,10 @@ export class PricePipe implements PipeTransform {
     numbers: number
   ) {
     if (result === 'more') {
-      value = value / 1000;
-      return pipeType + value.toFixed(numbers);
+      const check = value / 1000;
+      return pipeType + Number(check.toFixed(numbers)).toPrecision();
     } else {
-      return pipeType + value.toFixed(numbers);
+      return pipeType + Number(value.toFixed(numbers)).toPrecision();
     }
   }
 }

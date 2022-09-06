@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-tour-of-heroes';
-  public point  = 958;
+  public point  = 20.32234;
 }
